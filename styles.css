@@ -1,0 +1,440 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Raleway;
+    text-align: center;
+    color: #000000;
+}
+
+body {
+    margin: 0;
+}
+
+.padding {
+    padding: 0 min(160px);
+}
+
+h1 {
+    font-size: 96px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 80px;
+    color: #9F0908;
+    font-weight: bold;
+    padding: 120px 0 64px 0;
+    margin: 0;
+}
+
+h3 {
+    font-size: 56px;
+    font-family: Economica;
+    margin: 0;
+    color: #000000 !important;
+    padding-bottom: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.nav a:hover {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.078);
+}
+
+#header {
+    height: 100vh;
+    background-image: url('./img/hero.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#tel {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    background-color: #9F0908;
+}
+
+#tel:hover {
+    background-color: rgb(61, 98, 29);
+}
+
+#tel img {
+    height: 24px;
+}
+
+.navbar {
+    color: white;
+    height: 112px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 0px;
+}
+
+.nav {
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    padding: 10px;
+}
+
+.translate {
+    display: flex;
+}
+.translate img {
+    height: 24px;
+}
+
+.translate a:hover {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0);
+}
+
+
+.headline {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.logo {
+    height: 64px;
+}
+
+#order {
+    margin-bottom: 120px;
+}
+
+#order img {
+    height: 128px;
+    margin-bottom: 16px;
+}
+
+.pick {
+    display: flex;
+    justify-content: space-between;
+    font-family: Economica;
+    font-weight: bold;
+    font-size: 56px;
+}
+
+#menu {
+    background-image: url('./img/1_desktop@3x.jpg');
+    background-size: cover;
+    padding-bottom: 120px;
+}
+
+.menuTable {
+    text-align: left;
+    display: flex;
+    margin-bottom: 56px;
+    align-items: center;
+}
+
+.menuTable table {
+    font-weight: bold;
+    font-size: 32px;
+    color: #675E54;
+    width: min(450px);
+    margin-left: 80px;
+}
+
+.menuTable table td {
+    padding: 0 32px 16px 0;
+}
+
+.menuTable table td:first-child {
+    /* padding: 0 32px 0 0 ; */
+}
+
+.menuTable table td:last-child {
+    text-align: right;
+}
+
+#spicy {
+    flex-direction: row-reverse;
+}
+
+#spicy table {
+    margin-left: 0;
+    margin-right: 80px;
+}
+
+#menu img {
+    width: 352px;
+    height: 352px;
+}
+
+#find {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#find h2 {
+    padding: 120px 0 8px 0;
+}
+
+.adress {
+    font-size: 24px;
+    padding: 8px 0 64px 0;
+}
+
+.adress img {
+    height: 24px;
+    width: 24px;
+}
+
+.maps {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+.footer {
+    height: 144px;
+    background-color: #0A141E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#socialmedia img {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+}
+
+#sakuraLogo {
+    height: 44px;
+    width: auto;
+}
+
+#mobileSakuraLogo {
+    height: 40px;
+    width: auto;
+}
+
+
+/* TABLET */
+
+@media (max-width: 970px) {
+    .nav a:not(#tel) {
+        display: none;
+    }
+
+    .nav {
+        justify-content: flex-end;
+    }
+
+    #tel {
+        font-size: 20px;
+    }
+
+    #tel img {
+        width: 20px;
+        height: 20px;
+    }
+
+    h1 {
+        font-size: 72px;
+    }
+
+    .headline {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 64px;
+        padding: 96px 0 48px 0;
+    }
+
+    #order {
+        margin-bottom: 96px;
+    }
+
+    #menu {
+        padding-bottom: 96px;
+    }
+
+    #find h2 {
+        padding: 96px 0 8px 0;
+    }
+
+    #order img {
+        height: 112px;
+        margin-bottom: 8px;
+    }
+
+    .pick {
+        font-size: 32px;
+    }
+
+    .pick div {
+        margin-bottom: 32px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    .menuTable {
+        margin-bottom: 32px;
+    }
+
+    .menuTable table {
+        margin-left: min(24px);
+    }
+
+    .menuTable table td {
+        font-size: 24px;
+        padding: 0 32px 8px 0;
+
+    }
+
+    #spicy table {
+        margin-left: 0;
+        margin-right: min(24px);
+    }
+
+    .adress {
+        font-size: 20px;
+        padding: 8px 0 48px 0;
+    }
+
+}
+
+/* MOBILE PHONE */
+
+@media (max-width: 800px) {
+
+    .padding {
+        padding: 0 min(10px);
+    }
+
+    #tel {
+        font-size: 16px;
+    }
+
+    #tel img {
+        width: 16px;
+        height: 16px;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    .headline {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 40px;
+        padding: 72px 0 48px 0;
+    }
+
+    .pick {
+        flex-direction: column;
+    }
+
+    #order {
+        margin-bottom: 72px;
+    }
+
+    #menu {
+        padding-bottom: 72px;
+    }
+
+    #find h2 {
+        padding: 72px 0 8px 0;
+    }
+
+    #order img {
+        height: 112px;
+        margin-bottom: 8px;
+    }
+
+    .pick {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    .menuTable {
+        margin-bottom: 32px;
+        flex-direction: column;
+    }
+
+    .menuTable table {
+        margin-left: min(24px);
+        margin-top: 32px;
+    }
+
+    .menuTable table td {
+        font-size: 24px;
+        padding: 0 0 8px 0;
+
+    }
+
+    #spicy {
+        flex-direction: column;
+    }
+
+    #spicy table {
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+
+    #spicy table td {
+        padding: 0 0 8px 0;
+    }
+
+    .adress {
+        font-size: 20px;
+        padding: 8px 0 40px 0;
+    }
+
+    .footer {
+        height: 86px;
+    }
+
+    #sakuraLogo {
+        display: none;
+    }
+
+    #socialmedia img {
+        width: 32px;
+        height: 32px;
+        margin: 2px;
+    }
+
+}
+
+
+
+@media (min-width: 800px) {
+    #mobileSakuraLogo {
+        display: none;
+    }
+}

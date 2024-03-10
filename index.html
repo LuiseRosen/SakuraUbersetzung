@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Ramen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- SAKURA RAMEN -->
+    <div class="padding" id="header">
+        <div class="navbar">
+            <img class="logo" src="./img/2_sakura_logo@3x.png">
+            <div class="nav">
+                <a id="menu-btn" href="#menu">MENU</a>
+                <a id="find-btn" href="#find">LOCATIONS</a>
+                <a id="about-btn" href="#">ABOUT</a>
+                <a id="tel" href="tel:176 54564534">
+                    <img src="./img/1_phone@3x.png">
+                    0176 54564534</a>
+                <div class="translate">
+                    <a onclick="german()" id="german" href="#">
+                        <img src="./img/germany-flag-round-icon-64.png" alt="deutsche flagge">
+                    </a>
+                    <a onclick="english()" id="english" href="#">
+                        <img src="./img/vereinigtes-konigreich.png" alt="britische flagge">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="headline">
+            <h1>SAKURA RAMEN</h1>
+            <div id="subHead">THE BEST RAMEN IN TOWN</div>
+        </div>
+
+    </div>
+
+
+    <!-- HOW TO ORDER -->
+    <div class="padding" id="order">
+        <h2 id="orderHead">HOW TO ORDER</h2>
+        <div class="pick">
+            <div>
+                <img src="./img/1_noodle@3x.png"> <br>
+                <div id="noodle">Pick your <br> noodle</div>
+            </div>
+            <div>
+                <img src="./img/2_broth@3x.png"> <br>
+                <div id="broth">Pick your <br> broth</div>
+            </div>
+            <div>
+                <img src="img/3_egg@3x.png"> <br>
+                <div id="topping">Add your <br> toppings</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OUR MENU -->
+    <div class="padding" id="menu">
+        <h2>OUR MENU</h2>
+        <div class="menuTable" id="tonkotsu">
+            <img src="./img/2_R1-CP.png">
+            <table>
+                <tr>
+                    <th colspan="2">
+                        <h3>Tonkotsu Ramen</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <td>CHICKEN</td>
+                    <td>11,95€</td>
+                </tr>
+                <tr>
+                    <td>BEEF</td>
+                    <td>12,95€</td>
+                </tr>
+                <tr>
+                    <td>SHRIMP</td>
+                    <td>13,95€</td>
+                </tr>
+            </table>
+        </div>
+        <div class="menuTable" id="spicy">
+            <img src="./img/3_R2-CP.png">
+            <table>
+                <tr>
+                    <th colspan="2">
+                        <h3>Spicy Miso Ramen</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <td>CHICKEN</td>
+                    <td>11,95€</td>
+                </tr>
+                <tr>
+                    <td>BEEF</td>
+                    <td>12,95€</td>
+                </tr>
+                <tr>
+                    <td>SHRIMP</td>
+                    <td>13,95€</td>
+                </tr>
+            </table>
+        </div>
+        <div class="menuTable" id="shio">
+            <img src="./img/4_R3-CP.png">
+            <table>
+                <tr>
+                    <th colspan="2">
+                        <h3>Shio Ramen</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <td>CHICKEN</td>
+                    <td>11,95€</td>
+                </tr>
+                <tr>
+                    <td>BEEF</td>
+                    <td>12,95€</td>
+                </tr>
+                <tr>
+                    <td>SHRIMP</td>
+                    <td>13,95€</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- FIND US AT -->
+    <div id="find">
+        <h2>
+            FIND US AT
+        </h2>
+        <div class="adress">
+            <img src="./img/1_ubication@3x.png">
+            Kapuzinerstraße 31, München, 80337
+        </div>
+        <iframe class="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.2079675910263!2d11.55862837601328!3d48.12551265200147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf44d01affc5%3A0xe7a07e0710be63e8!2sKapuzinerstra%C3%9Fe%2031%2C%2080337%20M%C3%BCnchen!5e0!3m2!1sen!2sde!4v1695821118044!5m2!1sen!2sde"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="padding footer">
+        <a href="#"><img class="mobile-only" id="mobileSakuraLogo" src="./img/2_sakura_logo@3x.png"></a>
+        <a href="#"><img class="desktop-only" id="sakuraLogo" src="./img/2_sakura_ramen@3x.png"></a>
+
+        <div id="socialmedia">
+            <a href="#"><img src="./img/3_tripadvisor@3x.png"></a>
+            <a href="#"><img src="./img/4_facebook@3x.png"></a>
+            <a href="#"><img src="./img/5_instagram@3x.png"></a>
+        </div>
+    </div>
+
+
+    <script>
+        function german() {
+            document.getElementById('menu-btn').innerHTML = 'MENÜ';
+            document.getElementById('find-btn').innerHTML = 'ORTE';
+            document.getElementById('about-btn').innerHTML = 'ÜBER UNS';
+            document.getElementById('subHead').innerHTML = 'DIE BESTEN NUDELN DER STADT';
+            document.getElementById('orderHead').innerHTML = 'SO BESTELLST DU';
+            document.getElementById('noodle').innerHTML = 'Wähle deine <br> Nudel';
+            document.getElementById('broth').innerHTML = 'Wähle deine <br> Brühe';
+            document.getElementById('topping').innerHTML = 'Wähle dein <br> Krönchen';
+
+        }
+    </script>
+
+</body>
+
+</html>
